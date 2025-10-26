@@ -1,0 +1,9 @@
+This folder contain the Sender Side source code, in which the USB-A peripheral are connected.
+This includes the source files and associated header files:
+    - hid_host.c/h - implementing HID USB host functionality through TinyUSB library 
+    - laser_tx_sender.c/h - used for controlling sending through UART over laser link
+    - laser_rx_sender.c/h - used for controlling receiving through UART over laser link
+    - packet_queue.c/h - used to implement queue data structures
+    - msc_host.c/h - used to implement MSC functionality (not complete)
+This folder also relies on both TinyUSB and STM32 HAL libraries, both of which are acknowledged and open source.
+The created source files are covered under the MIT open source license. 
